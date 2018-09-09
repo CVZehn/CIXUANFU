@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=LED3 Pin=*3-25
+Removed Pin From Net: NetName=LED4 Pin=*3-26
+Added Pin To Net: NetName=LED3 Pin=*3-18
+Added Pin To Net: NetName=LED4 Pin=*3-19
+Added Member To Class: ClassName=Sheet1 Member=Component C? CAP

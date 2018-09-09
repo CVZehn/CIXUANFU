@@ -1,0 +1,25 @@
+Added Component: Designator=C3(C_0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C4(C_0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C5(C_0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C6(C_0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C7(C_0603)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=3.3v Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=3.3v Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=3.3v Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=3.3v Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=3.3v Pin=C7-2
+Added Member To Class: ClassName=Sheet1 Member=Component C3 CAP
+Added Member To Class: ClassName=Sheet1 Member=Component C4 CAP
+Added Member To Class: ClassName=Sheet1 Member=Component C5 CAP
+Added Member To Class: ClassName=Sheet1 Member=Component C6 CAP
+Added Member To Class: ClassName=Sheet1 Member=Component C7 CAP
