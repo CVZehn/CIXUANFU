@@ -18,7 +18,13 @@
 #include "stm32f10x.h"
 #include "bsp_led.h"
 #include "PWM.h"
-#include "Magnet_control.h"   
+#include "Magnet_control.h" 
+#include "adc.h"  
+#include "usart.h"
+#include "delay.h"	
+#include "timer.h"
+#include "PID.h"
+
 
 #define SOFT_DELAY Delay(0x0FFFFF);
 
@@ -31,32 +37,30 @@ void Delay(__IO u32 nCount);
   */
 int main(void)
 {	
-	/* LED 端口初始化 */
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //设置NVIC中断分组2:2位抢占优先级，2位响应优先级
+	delay_init();	    	 //延时函数初始化	  
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置中断优先级分组为组2：2位抢占优先级，2位响应优先级
+	uart_init(115200);	 	//串口初始化为115200
+    TIM3_Int_Init(72-1,20000);
+ 	Adc_Init();		  		//ADC初始化
 	LED_GPIO_Config();	
     MAGNET_GPIO_Config(); 
  	PWM_Config(899,0);	 //不分频。PWM频率=72000000/900=80Khz
     
-  
-//        GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE);
 
 		GPIO_SetBits(GPIOB,GPIO_Pin_3);
-		GPIO_SetBits(GPIOB,GPIO_Pin_9);
-//		GPIO_SetBits(GPIOB,GPIO_Pin_3);         
-//		GPIO_SetBits(GPIOB,GPIO_Pin_4);
-//		GPIO_ResetBits(GPIOB,GPIO_Pin_5);
-//		GPIO_SetBits(GPIOB,GPIO_Pin_6);
-//		GPIO_SetBits(GPIOB,GPIO_Pin_7);
-//		GPIO_SetBits(GPIOB,GPIO_Pin_8);
-//		GPIO_SetBits(GPIOB,GPIO_Pin_9);				 
+		GPIO_SetBits(GPIOB,GPIO_Pin_9);	 
 		TIM_SetCompare2(TIM2,400);						 
 		TIM_SetCompare4(TIM4,400);		
-
+        MAGNET_left;MAGNET_up;
+        pid->Kp=0;
+//		
 	while (1)
 	{
 		GPIO_SetBits(GPIOB,GPIO_Pin_0);
 		GPIO_SetBits(GPIOB,GPIO_Pin_1);
 		GPIO_SetBits(GPIOB,GPIO_Pin_10);
+        printf("0:%d\r\n",Get_Adc(ADC_Channel_0));
+        printf("1:%d\r\n",Get_Adc(ADC_Channel_1));
         Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);
         Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);
         Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);Delay(0xffff);

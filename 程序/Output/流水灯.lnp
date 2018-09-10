@@ -25,11 +25,17 @@
 "..\..\output\stm32f10x_tim.o"
 "..\..\output\stm32f10x_usart.o"
 "..\..\output\stm32f10x_wwdg.o"
+"..\..\output\delay.o"
+"..\..\output\sys.o"
+"..\..\output\usart.o"
 "..\..\output\main.o"
 "..\..\output\stm32f10x_it.o"
 "..\..\output\bsp_led.o"
 "..\..\output\magnet_control.o"
 "..\..\output\pwm.o"
+"..\..\output\adc.o"
+"..\..\output\timer.o"
+"..\..\output\pid.o"
 --library_type=microlib --strict --scatter "..\..\Output\Á÷Ë®µÆ.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
