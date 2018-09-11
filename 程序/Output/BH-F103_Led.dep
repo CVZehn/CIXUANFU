@@ -794,7 +794,7 @@ I (..\..\Libraries\FWlib\inc\stm32f10x_wwdg.h)(0x57C78855)
 I (..\..\Libraries\FWlib\inc\misc.h)(0x57C78855)
 I (..\..\SYSTEM\usart\usart.h)(0x50517A82)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
-F (..\..\User\main.c)(0x5B966B95)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\led -I ..\..\User\Magnet_control -I ..\..\User\PWM -I ..\..\SYSTEM\delay -I ..\..\SYSTEM\sys -I ..\..\SYSTEM\usart -I ..\..\User\ADC -I ..\..\User\TIMER -I ..\..\User\PID-I.\RTE\_Led-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\..\output\main.o --omf_browse ..\..\output\main.crf --depend ..\..\output\main.d)
+F (..\..\User\main.c)(0x5B97C92A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\led -I ..\..\User\Magnet_control -I ..\..\User\PWM -I ..\..\SYSTEM\delay -I ..\..\SYSTEM\sys -I ..\..\SYSTEM\usart -I ..\..\User\ADC -I ..\..\User\TIMER -I ..\..\User\PID-I.\RTE\_Led-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\..\output\main.o --omf_browse ..\..\output\main.crf --depend ..\..\output\main.d)
 I (..\..\Libraries\CMSIS\stm32f10x.h)(0x57C78855)
 I (..\..\Libraries\CMSIS\core_cm3.h)(0x59C3DC4B)
 I (D:\keil\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -831,8 +831,8 @@ I (..\..\SYSTEM\sys\sys.h)(0x550F951B)
 I (..\..\SYSTEM\usart\usart.h)(0x50517A82)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (..\..\SYSTEM\delay\delay.h)(0x555AC82B)
-I (..\..\User\TIMER\timer.h)(0x539EEB00)
-I (..\..\User\PID\PID.h)(0x5B966B24)
+I (..\..\User\TIMER\timer.h)(0x5B97C92A)
+I (..\..\User\PID\PID.h)(0x5B979E59)
 F (..\..\User\stm32f10x_conf.h)(0x57C78855)()
 F (..\..\User\stm32f10x_it.c)(0x57C78855)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\led -I ..\..\User\Magnet_control -I ..\..\User\PWM -I ..\..\SYSTEM\delay -I ..\..\SYSTEM\sys -I ..\..\SYSTEM\usart -I ..\..\User\ADC -I ..\..\User\TIMER -I ..\..\User\PID-I.\RTE\_Led-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\..\output\stm32f10x_it.o --omf_browse ..\..\output\stm32f10x_it.crf --depend ..\..\output\stm32f10x_it.d)
 I (..\..\User\stm32f10x_it.h)(0x57C78855)
@@ -989,8 +989,8 @@ I (..\..\Libraries\FWlib\inc\stm32f10x_wwdg.h)(0x57C78855)
 I (..\..\Libraries\FWlib\inc\misc.h)(0x57C78855)
 I (..\..\SYSTEM\delay\delay.h)(0x555AC82B)
 F (..\..\User\ADC\ADC.h)(0x5B95DC58)()
-F (..\..\User\TIMER\timer.c)(0x5B966B08)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\led -I ..\..\User\Magnet_control -I ..\..\User\PWM -I ..\..\SYSTEM\delay -I ..\..\SYSTEM\sys -I ..\..\SYSTEM\usart -I ..\..\User\ADC -I ..\..\User\TIMER -I ..\..\User\PID-I.\RTE\_Led-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\..\output\timer.o --omf_browse ..\..\output\timer.crf --depend ..\..\output\timer.d)
-I (..\..\User\TIMER\timer.h)(0x539EEB00)
+F (..\..\User\TIMER\timer.c)(0x5B97C963)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\led -I ..\..\User\Magnet_control -I ..\..\User\PWM -I ..\..\SYSTEM\delay -I ..\..\SYSTEM\sys -I ..\..\SYSTEM\usart -I ..\..\User\ADC -I ..\..\User\TIMER -I ..\..\User\PID-I.\RTE\_Led-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\..\output\timer.o --omf_browse ..\..\output\timer.crf --depend ..\..\output\timer.d)
+I (..\..\User\TIMER\timer.h)(0x5B97C92A)
 I (..\..\SYSTEM\sys\sys.h)(0x550F951B)
 I (..\..\Libraries\CMSIS\stm32f10x.h)(0x57C78855)
 I (..\..\Libraries\CMSIS\core_cm3.h)(0x59C3DC4B)
@@ -1023,9 +1023,9 @@ I (..\..\Libraries\FWlib\inc\misc.h)(0x57C78855)
 I (..\..\User\PWM\PWM.h)(0x5B9669A8)
 I (..\..\User\Magnet_control\Magnet_control.h)(0x5B94D51A)
 I (..\..\User\ADC\adc.h)(0x5B95DC58)
-I (..\..\User\PID\PID.h)(0x5B966B24)
-F (..\..\User\PID\PID.c)(0x5B966B7F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\led -I ..\..\User\Magnet_control -I ..\..\User\PWM -I ..\..\SYSTEM\delay -I ..\..\SYSTEM\sys -I ..\..\SYSTEM\usart -I ..\..\User\ADC -I ..\..\User\TIMER -I ..\..\User\PID-I.\RTE\_Led-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\..\output\pid.o --omf_browse ..\..\output\pid.crf --depend ..\..\output\pid.d)
-I (..\..\User\PID\PID.h)(0x5B966B24)
+I (..\..\User\PID\PID.h)(0x5B979E59)
+F (..\..\User\PID\PID.c)(0x5B979EC8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\..\Libraries\CMSIS -I ..\..\User -I ..\..\Libraries\FWlib\inc -I ..\..\User\led -I ..\..\User\Magnet_control -I ..\..\User\PWM -I ..\..\SYSTEM\delay -I ..\..\SYSTEM\sys -I ..\..\SYSTEM\usart -I ..\..\User\ADC -I ..\..\User\TIMER -I ..\..\User\PID-I.\RTE\_Led-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\..\output\pid.o --omf_browse ..\..\output\pid.crf --depend ..\..\output\pid.d)
+I (..\..\User\PID\PID.h)(0x5B979E59)
 I (..\..\Libraries\CMSIS\stm32f10x.h)(0x57C78855)
 I (..\..\Libraries\CMSIS\core_cm3.h)(0x59C3DC4B)
 I (D:\keil\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
@@ -1054,5 +1054,5 @@ I (..\..\Libraries\FWlib\inc\stm32f10x_tim.h)(0x57C78855)
 I (..\..\Libraries\FWlib\inc\stm32f10x_usart.h)(0x57C78855)
 I (..\..\Libraries\FWlib\inc\stm32f10x_wwdg.h)(0x57C78855)
 I (..\..\Libraries\FWlib\inc\misc.h)(0x57C78855)
-F (..\..\User\PID\PID.h)(0x5B966B24)()
+F (..\..\User\PID\PID.h)(0x5B979E59)()
 F (..\..\Doc\readme.txt)(0x57C78855)()
